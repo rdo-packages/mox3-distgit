@@ -1,13 +1,15 @@
 # Created by pyp2rpm-1.1.1
 %global pypi_name mox3
 
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+
 %if 0%{?fedora}
 %global with_python3 1
 %endif
 
 Name:           python-%{pypi_name}
-Version:        0.9.0
-Release:        4%{?dist}
+Version:        XXX
+Release:        XXX
 Summary:        Mock object framework for Python
 
 License:        ASL 2.0
@@ -81,7 +83,7 @@ This is Python 3 version.
 %endif
 
 %prep
-%setup -q -n %{pypi_name}-%{version}
+%setup -q -n %{pypi_name}-%{upstream_version}
 
 # let RPM handle deps
 rm -rf {test-,}requirements.txt
@@ -121,20 +123,3 @@ rm -rf {test-,}requirements.txt
 
 
 %changelog
-* Thu Sep 03 2015 Lukas Bezdicka <lbezdick@redhat.com> - 0.9.0-4
-- Changed URL to upstream git
-- Added versioned dependancy on python3-subunit
-- Drop removal of egg-info
-- Add fixtures, six, testtools dependancy
-
-* Wed Sep 02 2015 Lukas Bezdicka <lbezdick@redhat.com> - 0.9.0-3
-- Update python3 subpackage according to new guidelines
-
-* Mon Aug 17 2015 Alan Pevec <apevec.pevec@redhat.com> - 0.9.0-2
-- package review feedback
-
-* Sun Aug 16 2015 Alan Pevec <alan.pevec@redhat.com> - 0.9.0-1
-- Update to upstream 0.9.0
-
-* Tue Dec 16 2014 Miro Hrončok <mhroncok@redhat.com> - 0.7.0-1
-- Initial package.
