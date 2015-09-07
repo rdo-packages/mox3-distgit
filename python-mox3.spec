@@ -111,14 +111,14 @@ rm -rf {test-,}requirements.txt
 %doc README.rst
 %license COPYING.txt
 %{python2_sitelib}/%{pypi_name}
-%{python2_sitelib}/%{pypi_name}-%{version}-py?.?.egg-info
+%{python2_sitelib}/%{pypi_name}*.egg-info
 
 %if 0%{?with_python3}
 %files -n python3-%{pypi_name}
 %doc README.rst
 %license COPYING.txt
 %{python3_sitelib}/%{pypi_name}
-%{python3_sitelib}/%{pypi_name}-%{version}-py?.?.egg-info
+%{python3_sitelib}/%{pypi_name}*.egg-info
 %endif
 
 
