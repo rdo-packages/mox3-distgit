@@ -3,7 +3,7 @@
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
-%if 0%{?fedora}
+%if 0%{?fedora} > 21
 %global with_python3 1
 %endif
 
