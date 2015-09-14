@@ -27,6 +27,9 @@ been made.
 %package -n     python2-%{pypi_name}
 Summary:        Mock object framework for Python
 %{?python_provide:%python_provide python2-%{pypi_name}}
+# TEMP workaround until rdo-rpm-macros is available in Delorean EL7 buildroot
+Provides:       python-mox3 = %{version}-%{release}
+Obsoletes:      python-mox3 < %{version}-%{release}
 
 Requires:  python-pbr
 Requires:  python-fixtures
