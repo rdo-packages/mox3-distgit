@@ -6,8 +6,8 @@
 %endif
 
 Name:           python-%{pypi_name}
-Version:        0.9.0
-Release:        4%{?dist}
+Version:        0.10.0
+Release:        1%{?dist}
 Summary:        Mock object framework for Python
 
 License:        ASL 2.0
@@ -121,6 +121,9 @@ rm -rf {test-,}requirements.txt
 
 
 %changelog
+* Wed Sep 16 2015 Alan Pevec <alan.pevec@redhat.com> 0.10.0-1
+- Update to upstream 0.10.0
+
 * Thu Sep 03 2015 Lukas Bezdicka <lbezdick@redhat.com> - 0.9.0-4
 - Changed URL to upstream git
 - Added versioned dependancy on python3-subunit
