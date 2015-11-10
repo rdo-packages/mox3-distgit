@@ -7,7 +7,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.10.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Mock object framework for Python
 
 License:        ASL 2.0
@@ -121,6 +121,9 @@ rm -rf {test-,}requirements.txt
 
 
 %changelog
+* Tue Nov 10 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Changes/python3.5
+
 * Wed Sep 16 2015 Alan Pevec <alan.pevec@redhat.com> 0.10.0-1
 - Update to upstream 0.10.0
 
