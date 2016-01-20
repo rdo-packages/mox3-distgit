@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-1b13139cb4144f89e0db72e1ff3a0eae2ae9e7cb	mox3-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+a5d9d03766f5731cac74529cef203698d511dc3c       	mox3-distgit-core
+1b13139cb4144f89e0db72e1ff3a0eae2ae9e7cb        	mox3-distgit-ptl
+global:Registered-Users		Registered Users
