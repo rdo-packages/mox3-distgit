@@ -8,13 +8,13 @@
 %endif
 
 Name:           python-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        0.17.0
+Release:        1%{?dist}
 Summary:        Mock object framework for Python
 
 License:        ASL 2.0
 URL:            http://git.openstack.org/cgit/openstack/mox3
-Source0:        https://pypi.python.org/packages/source/m/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+Source0:        https://pypi.io/packages/source/m/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
  
 
@@ -126,3 +126,6 @@ rm -rf {test-,}requirements.txt
 
 
 %changelog
+* Fri Sep 02 2016 Haikel Guemar <hguemar@fedoraproject.org> 0.17.0-1
+- Update to 0.17.0
+
