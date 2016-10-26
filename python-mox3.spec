@@ -8,8 +8,8 @@
 %endif
 
 Name:           python-%{pypi_name}
-Version:        0.17.0
-Release:        2%{?dist}
+Version:        0.18.0
+Release:        1%{?dist}
 Summary:        Mock object framework for Python
 
 License:        ASL 2.0
@@ -123,6 +123,9 @@ rm -rf {test-,}requirements.txt
 
 
 %changelog
+* Wed Oct 26 2016 Jon Schlueter <jschluet@redhat.com> 0.18.0-1
+- Update to 0.18.0
+
 * Fri Sep  2 2016 Haïkel Guémar <hguemar@fedoraproject.org> - 0.17.0-2
 - Remove old workarounds
 
