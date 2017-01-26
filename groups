@@ -1,6 +1,6 @@
 # UUID                                  	Group Name
 #
 1b13139cb4144f89e0db72e1ff3a0eae2ae9e7cb	openstack/mox3-distgit-ptl
-a5d9d03766f5731cac74529cef203698d511dc3c	openstack/mox3-distgit-core
 63673ea7f2ae6a5666566b1ea9f14e473d00f5a9	rdo-core
+a5d9d03766f5731cac74529cef203698d511dc3c	openstack/mox3-distgit-core
 global:Registered-Users                 	Registered Users
