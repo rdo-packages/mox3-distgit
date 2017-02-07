@@ -14,7 +14,7 @@ Summary:        Mock object framework for Python
 
 License:        ASL 2.0
 URL:            http://git.openstack.org/cgit/openstack/mox3
-Source0:        https://pypi.python.org/packages/source/m/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+Source0:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz
 BuildArch:      noarch
  
 
