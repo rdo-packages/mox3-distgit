@@ -41,7 +41,6 @@ BuildRequires:  python-testrepository
 # test requires
 BuildRequires:  python-fixtures
 BuildRequires:  python-subunit
-BuildRequires:  python-coverage
 BuildRequires:  python-testtools
 BuildRequires:  python-six >= 1.9.0
 
@@ -69,7 +68,6 @@ BuildRequires:  python3-testrepository
 # test requires
 BuildRequires:  python3-fixtures
 BuildRequires:  python3-subunit >= 1.1.0-5
-BuildRequires:  python3-coverage
 BuildRequires:  python3-testtools
 BuildRequires:  python3-six >= 1.9.0
 
