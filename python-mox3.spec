@@ -8,8 +8,8 @@
 %endif
 
 Name:           python-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        0.23.0
+Release:        1%{?dist}
 Summary:        Mock object framework for Python
 
 License:        ASL 2.0
@@ -121,3 +121,6 @@ rm -rf {test-,}requirements.txt
 
 
 %changelog
+* Thu Aug 10 2017 Alfredo Moralejo <amoralej@redhat.com> 0.23.0-1
+- Update to 0.23.0
+
