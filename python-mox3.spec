@@ -7,6 +7,12 @@
 %global with_python3 1
 %endif
 
+%global common_desc \
+Mox3 is a mock object framework for Python 3 and 2.7. \
+Mox3 is an unofficial port of the Google mox framework to Python 3. It was \
+meant to be as compatible with mox as possible, but small enhancements have \
+been made.
+
 Name:           python-%{pypi_name}
 Version:        XXX
 Release:        XXX
@@ -19,10 +25,7 @@ BuildArch:      noarch
  
 
 %description
-Mox3 is a mock object framework for Python 3 and 2.7.
-Mox3 is an unofficial port of the Google mox framework to Python 3. It was
-meant to be as compatible with mox as possible, but small enhancements have
-been made.
+%{common_desc}
 
 %package -n     python2-%{pypi_name}
 Summary:        Mock object framework for Python
@@ -45,10 +48,7 @@ BuildRequires:  python-testtools
 BuildRequires:  python-six >= 1.9.0
 
 %description -n python2-%{pypi_name}
-Mox3 is a mock object framework for Python 3 and 2.7.
-Mox3 is an unofficial port of the Google mox framework to Python 3. It was
-meant to be as compatible with mox as possible, but small enhancements have
-been made.
+%{common_desc}
  
 %if 0%{?with_python3}
 %package -n     python3-%{pypi_name}
@@ -72,10 +72,7 @@ BuildRequires:  python3-testtools
 BuildRequires:  python3-six >= 1.9.0
 
 %description -n python3-%{pypi_name}
-Mox3 is a mock object framework for Python 3 and 2.7.
-Mox3 is an unofficial port of the Google mox framework to Python 3. It was
-meant to be as compatible with mox as possible, but small enhancements have
-been made.
+%{common_desc}
 
 This is Python 3 version.
 %endif
