@@ -70,6 +70,7 @@ BuildRequires:  python3-fixtures
 BuildRequires:  python3-subunit >= 1.1.0-5
 BuildRequires:  python3-testtools
 BuildRequires:  python3-six >= 1.9.0
+BuildRequires:  openstack-macros
 
 %description -n python3-%{pypi_name}
 %{common_desc}
@@ -81,7 +82,7 @@ This is Python 3 version.
 %setup -q -n %{pypi_name}-%{upstream_version}
 
 # let RPM handle deps
-rm -rf {test-,}requirements.txt
+%py_req_cleanup
 
 %build
 %{__python2} setup.py build
