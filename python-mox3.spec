@@ -23,6 +23,7 @@ URL:            http://git.openstack.org/cgit/openstack/mox3
 Source0:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz
 BuildArch:      noarch
  
+BuildRequires:  openstack-macros
 
 %description
 %{common_desc}
@@ -70,7 +71,6 @@ BuildRequires:  python3-fixtures
 BuildRequires:  python3-subunit >= 1.1.0-5
 BuildRequires:  python3-testtools
 BuildRequires:  python3-six >= 1.9.0
-BuildRequires:  openstack-macros
 
 %description -n python3-%{pypi_name}
 %{common_desc}
