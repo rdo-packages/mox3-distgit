@@ -32,21 +32,21 @@ BuildRequires:  openstack-macros
 Summary:        Mock object framework for Python
 %{?python_provide:%python_provide python2-%{pypi_name}}
 
-Requires:  python-pbr
-Requires:  python-fixtures
-Requires:  python-six >= 1.9.0
-Requires:  python-testtools
+Requires:  python2-pbr
+Requires:  python2-fixtures
+Requires:  python2-six >= 1.9.0
+Requires:  python2-testtools
 
 BuildRequires:  python2-devel
-BuildRequires:  python-pbr
-BuildRequires:  python-nose
-BuildRequires:  python-testrepository
+BuildRequires:  python2-pbr
+BuildRequires:  python2-nose
+BuildRequires:  python2-testrepository
 
 # test requires
-BuildRequires:  python-fixtures
-BuildRequires:  python-subunit
-BuildRequires:  python-testtools
-BuildRequires:  python-six >= 1.9.0
+BuildRequires:  python2-fixtures
+BuildRequires:  python2-subunit
+BuildRequires:  python2-testtools
+BuildRequires:  python2-six >= 1.9.0
 
 %description -n python2-%{pypi_name}
 %{common_desc}
