@@ -14,8 +14,8 @@ meant to be as compatible with mox as possible, but small enhancements have \
 been made.
 
 Name:           python-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        0.26.0
+Release:        1%{?dist}
 Summary:        Mock object framework for Python
 
 License:        ASL 2.0
@@ -119,3 +119,6 @@ This is Python 3 version.
 
 
 %changelog
+* Thu Aug 02 2018 RDO <dev@lists.rdoproject.org> 0.26.0-1
+- Update to 0.26.0
+
