@@ -21,6 +21,7 @@ Summary:        Mock object framework for Python
 License:        ASL 2.0
 URL:            http://git.openstack.org/cgit/openstack/mox3
 Source0:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz
+Patch0001:      0001-add-python-3.6-unit-test-job.patch
 BuildArch:      noarch
  
 BuildRequires:  openstack-macros
@@ -39,11 +40,10 @@ Requires:  python2-testtools
 
 BuildRequires:  python2-devel
 BuildRequires:  python2-pbr
-BuildRequires:  python2-nose
-BuildRequires:  python2-testrepository
 
 # test requires
 BuildRequires:  python2-fixtures
+BuildRequires:  python2-stestr
 BuildRequires:  python2-subunit
 BuildRequires:  python2-testtools
 BuildRequires:  python2-six >= 1.9.0
@@ -63,11 +63,11 @@ Requires:  python3-testtools
 
 BuildRequires:  python3-devel
 BuildRequires:  python3-pbr
-BuildRequires:  python3-nose
 BuildRequires:  python3-testrepository
 
 # test requires
 BuildRequires:  python3-fixtures
+BuildRequires:  python3-stestr
 BuildRequires:  python3-subunit >= 1.1.0-5
 BuildRequires:  python3-testtools
 BuildRequires:  python3-six >= 1.9.0
@@ -79,7 +79,7 @@ This is Python 3 version.
 %endif
 
 %prep
-%setup -q -n %{pypi_name}-%{upstream_version}
+%autosetup -p1 -n %{pypi_name}-%{upstream_version}
 
 # let RPM handle deps
 %py_req_cleanup
@@ -99,9 +99,9 @@ This is Python 3 version.
 
 %check
 %if 0%{?with_python3}
-%{__python3} setup.py test
+PYTHON=python3 stestr-3 run
 %endif
-%{__python2} setup.py test
+PYTHON=python2 stestr run
 
 %files  -n python2-%{pypi_name}
 %doc README.rst
