@@ -119,3 +119,4 @@ PYTHON=python2 stestr run
 
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/mox3/commit/?id=34a010e1681d66783319bfa18aa7dd6dbe6adc6b
