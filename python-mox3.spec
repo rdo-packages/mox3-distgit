@@ -8,7 +8,7 @@
 %endif
 
 Name:           python-%{pypi_name}
-Version:        0.23.0
+Version:        0.23.1
 Release:        1%{?dist}
 Summary:        Mock object framework for Python
 
@@ -121,6 +121,9 @@ rm -rf {test-,}requirements.txt
 
 
 %changelog
+* Thu Apr 18 2019 RDO <dev@lists.rdoproject.org> 0.23.1-1
+- Update to 0.23.1
+
 * Thu Aug 10 2017 Alfredo Moralejo <amoralej@redhat.com> 0.23.0-1
 - Update to 0.23.0
 
