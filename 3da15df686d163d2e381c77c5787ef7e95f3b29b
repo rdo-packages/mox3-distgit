@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8bab2aba_f03849c5",
+        "filename": "python-mox3.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-10-01T10:40:56Z",
+      "side": 1,
+      "message": "This can be cleaned up",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 55
+      },
+      "revId": "3da15df686d163d2e381c77c5787ef7e95f3b29b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
