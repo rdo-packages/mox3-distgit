@@ -68,3 +68,4 @@ PYTHON=python3 stestr-3 run
 %{python3_sitelib}/%{pypi_name}*.egg-info
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/mox3/commit/?id=99a302ffcd56248f10ff7dce70dbc4c53a53b3b0
