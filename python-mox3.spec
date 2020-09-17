@@ -10,8 +10,8 @@ meant to be as compatible with mox as possible, but small enhancements have \
 been made.
 
 Name:           python-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        1.1.0
+Release:        1%{?dist}
 Summary:        Mock object framework for Python
 
 License:        ASL 2.0
@@ -68,3 +68,6 @@ PYTHON=python3 stestr-3 run
 %{python3_sitelib}/%{pypi_name}*.egg-info
 
 %changelog
+* Thu Sep 17 2020 RDO <dev@lists.rdoproject.org> 1.1.0-1
+- Update to 1.1.0
+
